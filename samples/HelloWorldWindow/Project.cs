@@ -1,5 +1,5 @@
 // At a minimum use these namespaces for all Avalonia apps.
-// Most of the time, you'll need more than just thest two.
+// Most of the time, you'll need more than just these two.
 
 using Avalonia;
 using Avalonia.Controls;
@@ -13,7 +13,7 @@ class Project
         // UsePlatformDetect methods return a reference to the
         // appBuilder object. You will often see this used to
         // collapse all of the code below into one line. Note that
-        // Start method does NOT return anything.
+        // the Start method does NOT return anything.
 
         AppBuilder appBuilder;
 
@@ -24,7 +24,7 @@ class Project
 
     // Like Main, this is another static method. Avalonia doesn't
     // require that you use static methods, but this example is
-    // kept short by not creating any new objects.
+    // kept short by not creating any new objects we don't need.
 
     public static void AppMain(Application app, string[] args)
     {
@@ -57,7 +57,7 @@ class Project
         win.Show();
 
         // Start the application running with the window you created.
-        
+
         app.Run(win);
     }
 }
