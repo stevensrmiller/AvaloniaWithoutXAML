@@ -7,7 +7,7 @@ the others.
 Even if you don't actually download all of them, you can learn a lot about how to
 use Avalonia without XAML by reading the comments in the source code.
 
-A good learning path would this order.
+A good learning path would be this order.
 
 1. HelloWorldWindow
 2. HelloWorldLabel
