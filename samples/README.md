@@ -15,3 +15,4 @@ A good learning path would be this order.
 | HelloWorldLabel            | Just a window with a text label in it, saying "Hello World!"             |
 | StackOfLabels              | Three labels in various colors, arranged vertically in a layout manager. |
 | ButtonHandler              | A single button that will call your code when pressed.                   |
+| ButtonColors               | Replace the transparent button background with your own choices.         |
