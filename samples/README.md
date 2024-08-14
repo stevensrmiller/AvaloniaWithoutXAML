@@ -9,7 +9,9 @@ use Avalonia without XAML by reading the comments in the source code.
 
 A good learning path would be this order.
 
-1. HelloWorldWindow
-2. HelloWorldLabel
-3. StackOfLabels
-4. ButtonHandler
+| Name                       | Description                                                              |
+|----------------------------|--------------------------------------------------------------------------|
+| HelloWorldWindow<br>&nbsp; | The classic starter.<br>Just a window with the title, "Hello World!"     |
+| HelloWorldLabel            | Just a window with a text label in it, saying "Hello World!"             |
+| StackOfLabels              | Three labels in various colors, arranged vertically in a layout manager. |
+| ButtonHandler              | A single button that will call your code when pressed.                   |
