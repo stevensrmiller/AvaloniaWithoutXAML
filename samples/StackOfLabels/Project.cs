@@ -21,7 +21,7 @@ class Project
         // create the new window. The method will still have to return a
         // reference to the window so the Application object can run it.
 
-	var win = LabelStack.Create();
+	    var win = LabelStack.Create();
 
         win.Show();
         app.Run(win);
