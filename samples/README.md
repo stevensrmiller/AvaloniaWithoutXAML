@@ -16,6 +16,6 @@ A good learning path would be this order.
 | StackOfLabels              | Three labels in various colors, arranged vertically in a layout manager. |
 | ButtonHandler              | A single button that will call your code when pressed.                   |
 | ButtonColors               | Replace the transparent button background with your own choices.         |
-| MultiWindowGraphics        | Multiple independent windows, each filled with grahpic objects.          |
+| MultiWindowGraphics        | Multiple independent windows, each filled with graphic objects.          |
 | MultiWindowNoMain          | Multiple independent windows, none of which is the "main" app window.    |
 
