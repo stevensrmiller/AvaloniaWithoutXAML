@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ButtonColors", "ButtonColors.csproj", "{F35B00FF-04D1-43F8-841C-BEC73B686248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F35B00FF-04D1-43F8-841C-BEC73B686248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35B00FF-04D1-43F8-841C-BEC73B686248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35B00FF-04D1-43F8-841C-BEC73B686248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35B00FF-04D1-43F8-841C-BEC73B686248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46B07F0A-7942-44A1-893D-D43A12B9F99A}
+	EndGlobalSection
+EndGlobal
