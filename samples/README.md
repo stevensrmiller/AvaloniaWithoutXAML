@@ -18,4 +18,7 @@ A good learning path would be this order.
 | ButtonColors               | Replace the transparent button background with your own choices.         |
 | MultiWindowGraphics        | Multiple independent windows, each filled with graphic objects.          |
 | MultiWindowNoMain          | Multiple independent windows, none of which is the "main" app window.    |
-
+| GridWindow                 | Some controls laid out in a grid. (COMING SOON)                          |
+| DockMenu                   | A window with a menubar using the "dock" layout. (COMING SOON)           |
+| SliderProgress             | Sliders and progress bars. (COMING SOON)                                 |
+| Harmonograph               | Draw [harmonograph](https://en.wikipedia.org/wiki/Harmonograph) pictures. (COMING SOON) |
