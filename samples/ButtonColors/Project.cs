@@ -42,12 +42,15 @@ class Project
         app.Styles.Add(new Avalonia.Themes.Fluent.FluentTheme());
         app.RequestedThemeVariant = Avalonia.Styling.ThemeVariant.Light;
 
+        // Note the use of WindowStartupLocation here.
+        
         var win = new Window
         {
             Title = "Button Styles",
             Background = Brushes.Orange,
             Height = 24*9,
             Width = 24*16,
+            WindowStartupLocation = WindowStartupLocation.CenterScreen,
         };
 
         var stack = new StackPanel();
