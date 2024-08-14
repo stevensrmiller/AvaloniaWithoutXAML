@@ -17,4 +17,5 @@ A good learning path would be this order.
 | ButtonHandler              | A single button that will call your code when pressed.                   |
 | ButtonColors               | Replace the transparent button background with your own choices.         |
 | MultiWindowGraphics        | Multiple independent windows, each filled with grahpic objects           |
+| MultiWindowNoMain          | Multiple independent windows, none of which is the "main" app window     |
 
