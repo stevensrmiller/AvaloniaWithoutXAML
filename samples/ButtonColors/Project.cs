@@ -22,8 +22,10 @@
 // different colors for the button style and the window's
 // background, to find out what works best for you.
 
+using System.Diagnostics;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Layout;
 using Avalonia.Media;
 using Avalonia.Styling;
@@ -43,7 +45,7 @@ class Project
         app.RequestedThemeVariant = Avalonia.Styling.ThemeVariant.Light;
 
         // Note the use of WindowStartupLocation here.
-        
+
         var win = new Window
         {
             Title = "Button Styles",
@@ -128,6 +130,7 @@ class Project
         win.Content=stack;
 
         win.Show();
+
         app.Run(win);
     }
 }
