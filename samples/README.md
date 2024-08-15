@@ -20,5 +20,5 @@ A good learning path would be this order.
 | MultiWindowNoMain          | Multiple independent windows, none of which is the "main" app window.    |
 | GridWindow                 | Some controls laid out in a grid. (COMING SOON)                          |
 | DockMenu                   | A window with a menubar using the "dock" layout. (COMING SOON)           |
-| SliderProgress             | Sliders and progress bars. (COMING SOON)                                 |
+| SlidersProgress            | Sliders and progress bars.                                               |
 | Harmonograph               | Draw [harmonograph](https://en.wikipedia.org/wiki/Harmonograph) pictures. (COMING SOON) |
