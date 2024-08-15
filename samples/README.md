@@ -21,5 +21,6 @@ A good learning path would be this order.
 | ImageProcessing            | Display a bitmap image, modify its data, and display it again.           |
 | GridWindow                 | Some controls laid out in a grid. (COMING SOON)                          |
 | DockMenu                   | A window with a menubar using the "dock" layout. (COMING SOON)           |
+| TextBoxWindow              | A text box copied to a label as each character is entered. (COMING SOON) |
 | SlidersProgress            | Sliders and progress bars.                                               |
 | Harmonograph               | Draw [harmonograph](https://en.wikipedia.org/wiki/Harmonograph) pictures.|
