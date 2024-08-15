@@ -20,7 +20,7 @@ A good learning path would be this order.
 | MultiWindowNoMain          | Multiple independent windows, none of which is the "main" app window.    |
 | ImageProcessing            | Display a bitmap image, modify its data, and display it again.           |
 | GridWindow                 | Some controls laid out in a grid. (COMING SOON)                          |
-| DockMenu                   | A window with a menubar using the "dock" layout. (COMING SOON)           |
+| DockMenu                   | A window with a menubar using the "dock" layout.                         |
 | TextBoxWindow              | A text box copied to a label as each character is entered.               |
 | SlidersProgress            | Sliders and progress bars.                                               |
 | Harmonograph               | Draw [harmonograph](https://en.wikipedia.org/wiki/Harmonograph) pictures.|
