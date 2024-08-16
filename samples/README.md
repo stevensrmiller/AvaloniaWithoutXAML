@@ -18,6 +18,7 @@ A good learning path would be this order.
 | ButtonColors               | Replace the transparent button background with your own choices.         |
 | MultiWindowGraphics        | Multiple independent windows, each filled with graphic objects.          |
 | MultiWindowNoMain          | Multiple independent windows, none of which is the "main" app window.    |
+| MultiWindowCancelToken     | Multiple independent windows, with no "main" window, closing on a signal.|
 | ImageProcessing            | Display a bitmap image, modify its data, and display it again.           |
 | DockMenu                   | A window with a menubar using the "dock" layout.                         |
 | TextBoxWindow              | A text box copied to a label as each character is entered.               |
