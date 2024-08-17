@@ -3,13 +3,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Layout;
-using Avalonia.Media;
 using Avalonia.Threading;
 
 internal class OurApplication
 {
     Window win;
     Label lblTime;
+    Button button;
+    int count;
     public OurApplication(Window win)
     {
         // Initialize our window.
@@ -20,18 +21,39 @@ internal class OurApplication
         win.WindowStartupLocation = WindowStartupLocation.CenterScreen;
         win.Height = 360;
         win.Width = 640;
-        win.Background = Brushes.Navy;
 
         lblTime = new Label
         {
-            Content = "Unused",
             HorizontalAlignment = HorizontalAlignment.Center,
             VerticalAlignment = VerticalAlignment.Center,
-            Foreground = Brushes.Yellow,
             FontSize = 48,
         };
 
-        win.Content = lblTime;
+        button = new Button
+        {
+            Content = "0",
+            FontSize = 48,
+            Height = 90,
+            Width = 160,
+            HorizontalAlignment = HorizontalAlignment.Center,
+            HorizontalContentAlignment = HorizontalAlignment.Center,
+            VerticalContentAlignment = VerticalAlignment.Center,
+        };
+
+        // The event handler for button clicks will run on the
+        // UI thread, as they normally do.
+
+        button.Click += (s, e) => Increment();
+
+        var stack = new StackPanel
+        {
+            VerticalAlignment = VerticalAlignment.Center,
+        };
+
+        stack.Children.Add(lblTime);
+        stack.Children.Add(button);
+
+        win.Content = stack;
         win.Show();
 
         // Start a task on another thread.
@@ -65,7 +87,20 @@ internal class OurApplication
 
         // Tell the window to close but, again, run the code that does
         // so on the UI thread.
-        
+
         Dispatcher.UIThread.Post(() => Shutdown());
+    }
+
+    // This will change the button's label every time the button
+    // is clicked, while the clock display will continue to update
+    // in response to jobs queued by the worker thread. This will
+    // show how user interaction can proceed concurrently with
+    // work on another thread, and both can affect the UI.
+
+    private void Increment()
+    {
+        count = count + 1;
+
+        button.Content = $"{count}";
     }
 }

@@ -10,6 +10,8 @@ code almost as though you were making direct calls.
 
 This example opens a window with a clock in it, shows the time for ten seconds,
 then exits. The time is updated from a worker thread, which also closes the
-window.
+window. While the clock is being updated, you can also click the button, which
+will increment the count of times clicked in its label. This demonstrates that
+both a worker thread and user interaction can affect the UI concurrently.
 
-![Yellow time in a blue window.](ScreenCap.png "Yellow time in a blue window.")
+![Time and a button in a window.](ScreenCap.png "Time and a button in a window.")
