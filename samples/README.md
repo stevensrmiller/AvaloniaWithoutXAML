@@ -25,3 +25,4 @@ A good learning path would be this order.
 | GridWindow                 | Some controls laid out in a grid.                                        |
 | SlidersProgress            | Sliders and progress bars.                                               |
 | Harmonograph               | Draw [harmonograph](https://en.wikipedia.org/wiki/Harmonograph) pictures.|
+| MultiThreading             | Make changes to your UI from a worker thread.                            |
