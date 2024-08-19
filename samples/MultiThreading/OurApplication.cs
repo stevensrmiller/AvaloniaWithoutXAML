@@ -56,9 +56,10 @@ internal class OurApplication
         win.Content = stack;
         win.Show();
 
-        // Start a task on another thread.
+        // Start a task on another thread. (Assign to discard to avoid
+        // CS4014 warning.)
 
-        Task.Run(() => Counter());
+        _ = Task.Run(() => Counter());
     }
 
     private void SetTime(string timeText)

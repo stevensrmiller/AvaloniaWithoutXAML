@@ -3,6 +3,15 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+################################################################################
+# SRM My own stuff to ignore.                                                  #
+
+# This is where I am developing stuff I don't want included in git activity.
+dev/
+
+#                                                                              #
+################################################################################
+
 # User-specific files
 *.rsuser
 *.suo
