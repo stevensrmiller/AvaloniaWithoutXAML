@@ -26,3 +26,13 @@ A good learning path would be this order.
 | SlidersProgress            | Sliders and progress bars.                                               |
 | Harmonograph               | Draw [harmonograph](https://en.wikipedia.org/wiki/Harmonograph) pictures.|
 | MultiThreading             | Make changes to your UI from a worker thread.                            |
+
+In addition to the above, some samples that might interest you are these. They are listed apart from
+the ones in the first table because they don't really have any natural place in the learning order, and
+they also aren't as well written. Rather than hide them, they're offered to you in their own list, in case
+you might find them useful to something specific you are doing.
+
+| Name                       | Description                                                              |
+|----------------------------|--------------------------------------------------------------------------|
+| ShowIcon                   | Get a Windows icon and display it as an Avalonia image. Windows only!    |
+| OpenFile                   | Use a filepicker dialog box to get a filename.                           |
