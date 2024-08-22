@@ -37,4 +37,4 @@ you might find them useful to something specific you are doing.
 | OpenFile                   | Use a filepicker dialog box to get a filename.                           |
 | ImageProcessing<br>&nbsp;  | Display a bitmap image, modify its data, and display it again.<br>The image is in an external file, which leads to some messy code.|
 | ShowIcon                   | Get a Windows icon and display it as an Avalonia image. Windows only!    |
-| PlaySound                  | Load a .wav file and play it when a button is pressed. Windwos only!     |
+| PlaySound                  | Load a .wav file and play it when a button is pressed. Windows only!     |
