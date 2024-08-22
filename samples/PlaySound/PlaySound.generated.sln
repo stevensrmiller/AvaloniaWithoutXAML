@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaySound", "PlaySound.csproj", "{C45C8113-6937-49F5-9171-17C83B1259B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C45C8113-6937-49F5-9171-17C83B1259B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45C8113-6937-49F5-9171-17C83B1259B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45C8113-6937-49F5-9171-17C83B1259B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45C8113-6937-49F5-9171-17C83B1259B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62EA319B-4FA9-4BB3-87CE-2D25545A7A38}
+	EndGlobalSection
+EndGlobal
