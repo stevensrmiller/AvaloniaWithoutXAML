@@ -1,6 +1,9 @@
+using System;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using Avalonia.Controls;
+using Avalonia.Controls.Embedding.Offscreen;
 using Avalonia.Interactivity;
 using Avalonia.Media;
 using Avalonia.Media.Imaging;
@@ -90,9 +93,9 @@ internal class ImageProcessWindow
         {
             for (int col = 0; col < width; col++)
             {
-                bmpPtr[0] = (byte)~bmpPtr[0]; // red
+                bmpPtr[0] = (byte)~bmpPtr[0]; // blu
                 bmpPtr[1] = (byte)~bmpPtr[1]; // grn
-                bmpPtr[2] = (byte)~bmpPtr[2]; // blu
+                bmpPtr[2] = (byte)~bmpPtr[2]; // red
                 bmpPtr += 4;                  // alf
             }
         }
