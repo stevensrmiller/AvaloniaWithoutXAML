@@ -16,6 +16,9 @@ A good learning path would be this order.
 | StackOfLabels                 | Three labels in various colors, arranged vertically in a layout manager. |
 | ButtonHandler                 | A single button that will call your code when pressed.                   |
 | ButtonColors                  | Replace the transparent button background with your own choices.         |
+| DrawSquareLines               | Use four lines to draw a square.                                         |
+| DrawSquareBetter              | Use four lines to draw a square. Centralizes the line-drawing code.      |
+| DrawCircle                    | Use 100 lines to draw a circle.                                          |
 | MultiWindowGraphics           | Multiple independent windows, each filled with graphic objects.          |
 | MultiWindowNoMain             | Multiple independent windows, none of which is the "main" app window.    |
 | MultiWindowCancelToken        | Multiple independent windows, with no "main" window, closing on a signal.|
