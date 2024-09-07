@@ -42,3 +42,5 @@ you might find them useful to something specific you are doing.
 | ShowIcon                   | Get a Windows icon and display it as an Avalonia image. Windows only!    |
 | PlaySound                  | Load a .wav file and play it when a button is pressed. Windows only!     |
 | Starrs                     | Somewhat similar to the Harmonograph. This one draws "Starr" roses.      |
+| UndoDotsWithoutUndo        | A "bingo" card you can mark with orange dots, but can't undo.            |
+| UndoDotsWithUndo           | A "bingo" card you can mark with orange dots, with an undo option.       |
