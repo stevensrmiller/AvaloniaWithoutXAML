@@ -15,6 +15,6 @@ class Project
         app.Styles.Add(new Avalonia.Themes.Fluent.FluentTheme());
         app.RequestedThemeVariant = Avalonia.Styling.ThemeVariant.Light;
 
-        app.Run(new StarterWindow().win);
+        app.Run(new Spirograph().win);
     }
 }
