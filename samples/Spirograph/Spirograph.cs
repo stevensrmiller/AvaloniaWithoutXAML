@@ -14,7 +14,7 @@ internal class Spirograph
     private int initHeight = 720;
     private int initWidth = 1280;
 
-    private float innerToOuterDistanceRatio = 1.5f;
+    private float innerToOuterDistanceRatio = 10000f;
 
     private float frequency = -2.01f;
 
