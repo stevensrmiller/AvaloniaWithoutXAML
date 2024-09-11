@@ -44,3 +44,5 @@ you might find them useful to something specific you are doing.
 | Starrs                     | Somewhat similar to the Harmonograph. This one draws "Starr" roses.      |
 | UndoDotsWithoutUndo        | A "bingo" card you can mark with orange dots, but can't undo.            |
 | UndoDotsWithUndo           | A "bingo" card you can mark with orange dots, with an undo option.       |
+| Particles                  | Animated particles connected by lines. Updates driven by a worker thread.|
+| Spirograph                 | A two-arm drawing machine, but only one arm is done. You do the second.  |
