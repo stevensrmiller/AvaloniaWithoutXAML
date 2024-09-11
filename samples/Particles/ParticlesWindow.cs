@@ -72,11 +72,13 @@ internal class ParticlesWindow
             });
         }
 
-        foreach(var sp in particles)
+        for (int start = 0; start < particles.Length - 1; ++start)
         {
-            foreach (var ep in particles)
+            Particle sp = particles[start];
+
+            for (int end = start + 1; end < particles.Length; ++end)
             {
-                if (sp == ep) continue;
+                Particle ep = particles[end];
 
                 // Avoid taking a square root here by comparing the square of the max distance.
 
