@@ -48,7 +48,7 @@ internal class ParticlesWindow
 
     private void CreateParticles()
     {
-        particles = new Particle[50];
+        particles = new Particle[100];
 
         for (int i = 0; i < particles.Length; ++i)
         {
@@ -63,13 +63,13 @@ internal class ParticlesWindow
         {
             particle.Move();
 
-            canvas.Children.Add( new Line
-            {
-                StrokeThickness = 3,
-                Stroke = Brushes.White,
-                StartPoint = new Point(particle.x, particle.y),
-                EndPoint = new Point(particle.x + 3, particle.y),
-            });
+            // canvas.Children.Add( new Line
+            // {
+            //     StrokeThickness = 3,
+            //     Stroke = Brushes.White,
+            //     StartPoint = new Point(particle.x, particle.y),
+            //     EndPoint = new Point(particle.x + 3, particle.y),
+            // });
         }
 
         for (int start = 0; start < particles.Length - 1; ++start)

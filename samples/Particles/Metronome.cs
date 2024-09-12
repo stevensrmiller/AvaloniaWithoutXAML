@@ -16,12 +16,32 @@ internal class Metronome
         _ = Task.Run(Tick);
     }
 
-    private void Tick()
+    private async void Tick()
     {
         while (true)
         {
-            Dispatcher.UIThread.Post(() => DoTick());
-            Thread.Sleep(milliseconds);
+            long ticksIn = DateTime.Now.Ticks;
+
+            await Dispatcher.UIThread.InvokeAsync(() => DoTick());
+
+            long ticksOut = DateTime.Now.Ticks;
+
+            // How long did the update take?
+
+            int millisUsed = (int)(ticksOut - ticksIn) / 10000;
+
+            // What's that leave?
+
+            int timeLeft = milliseconds - millisUsed;
+
+            // Wait until the remaining time has elapsed (if any).
+
+            // if (timeLeft < 3)
+            // Console.WriteLine($"{timeLeft}, {ticksOut}, {ticksIn}");
+            if (timeLeft > 0)
+            {
+                Thread.Sleep(timeLeft);
+            }
         }
     }
 
