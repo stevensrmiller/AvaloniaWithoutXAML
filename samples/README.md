@@ -46,3 +46,4 @@ you might find them useful to something specific you are doing.
 | UndoDotsWithUndo           | A "bingo" card you can mark with orange dots, with an undo option.       |
 | Particles                  | Animated particles connected by lines. Updates driven by a worker thread.|
 | Spirograph                 | A two-arm drawing machine, but only one arm is done. You do the second.  |
+| RepLines                   | An example of the graphic arts idiom, "repetition with variation."       |
