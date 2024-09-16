@@ -47,3 +47,4 @@ you might find them useful to something specific you are doing.
 | Particles                  | Animated particles connected by lines. Updates driven by a worker thread.|
 | Spirograph                 | A two-arm drawing machine, but only one arm is done. You do the second.  |
 | RepLines                   | An example of the graphic arts idiom, "repetition with variation."       |
+| Chex						 | A classroom exercise that leads towards animating screen objects.        |
