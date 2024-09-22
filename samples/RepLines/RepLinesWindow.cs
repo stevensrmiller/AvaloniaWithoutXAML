@@ -37,12 +37,12 @@ internal class RepLinesWindow
     public void OnResized()
     {
         // We'll keep all the hard numbers here in one place.
-
-        int numLines = 200;
-        float dxs = 1.7f;
-        float dys = 2.1f;
-        float dxe = -4.7f;
-        float dye = -2.9f;
+        int div = 2;
+        int numLines = 200 / div;
+        float dxs = 1.7f * div;
+        float dys = 2.1f * div;
+        float dxe = -4.7f * div;
+        float dye = -2.9f * div;
 
         canvas.Children.Clear();
 
@@ -75,7 +75,7 @@ internal class RepLinesWindow
             {
                 StartPoint = new Point(xStart, yStart),
                 EndPoint = new Point(xEnd, yEnd),
-                StrokeThickness = 1.5,
+                StrokeThickness = 2.8,
                 Stroke = new SolidColorBrush(RealColor.Color(.24f, green, blue)),
             };
 

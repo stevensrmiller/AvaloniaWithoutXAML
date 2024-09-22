@@ -50,6 +50,9 @@ internal class ChexWindow
         win.Show();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void MakeBox()
     {
         // You can make a solid color rectangle by creating objects of the
