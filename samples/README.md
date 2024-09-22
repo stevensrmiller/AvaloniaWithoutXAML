@@ -23,6 +23,7 @@ A good learning path would be this order.
 | MultiWindowNoMain             | Multiple independent windows, none of which is the "main" app window.    |
 | MultiWindowCancelToken        | Multiple independent windows, with no "main" window, closing on a signal.|
 | ImageProcessingEmbed<br>&nbsp;| Display a bitmap image, modify its data, and display it again.<br>The image is included in the runtime assembly as an embedded resource.   |
+| ImageRotation                 | Display a bitmap image and rotate it while on the screen.                |
 | DockMenu                      | A window with a menubar using the "dock" layout.                         |
 | TextBoxWindow                 | A text box copied to a label as each character is entered.               |
 | GridWindow                    | Some controls laid out in a grid.                                        |
