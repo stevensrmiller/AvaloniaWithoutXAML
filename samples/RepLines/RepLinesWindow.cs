@@ -1,4 +1,5 @@
 using Avalonia;
+using Avalonia.Collections;
 using Avalonia.Controls;
 using Avalonia.Controls.Shapes;
 using Avalonia.Layout;
@@ -9,13 +10,13 @@ internal class RepLinesWindow
     public Window win;
 
     private Canvas canvas;
-    public RepLinesWindow()
+    public RepLinesWindow(float height, float width)
     {
         win = new Window
         {
             Title = "StarterWindow v0.1",
-            Height = 720,
-            Width = 1280,
+            Height = height,
+            Width = width,
             Background = Brushes.Magenta,
             WindowStartupLocation = WindowStartupLocation.CenterScreen,
         };
@@ -37,12 +38,21 @@ internal class RepLinesWindow
     public void OnResized()
     {
         // We'll keep all the hard numbers here in one place.
+<<<<<<< Updated upstream
         int div = 2;
         int numLines = 200 / div;
         float dxs = 1.7f * div;
         float dys = 2.1f * div;
         float dxe = -4.7f * div;
         float dye = -2.9f * div;
+=======
+
+        int numLines = 200;
+        float dxs = 3.7f;
+        float dys = 3.1f;
+        float dxe = -4.7f;
+        float dye = -3.9f;
+>>>>>>> Stashed changes
 
         canvas.Children.Clear();
 
@@ -89,6 +99,12 @@ internal class RepLinesWindow
 
             xEnd += dxe;
             yEnd += dye;
+
+            dxs = dxs - .04f;
+            dys = dys - .02f;
+
+            dxe = dxe + .04f;
+            dye = dye + .034f;
         }
     }
 }
