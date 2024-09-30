@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+
+    <!-- Need this to compile unsafe code, which is necessary for pointers. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.1.0" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.1.0" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.1.0" />
+
+    <!-- To use resources embedded in your assembly, include this package. -->
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="8.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <!-- Embed a file. We can have more than one, and use subdirectories too. -->
+    <EmbeddedResource Include="OldFriend.png" />
+  </ItemGroup>
+</Project>
