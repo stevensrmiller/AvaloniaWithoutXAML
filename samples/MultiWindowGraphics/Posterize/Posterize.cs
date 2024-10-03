@@ -68,18 +68,45 @@ internal class Posterize
         {
             for (int c = 0; c < wi.width; ++c)
             {
-                if (wi[r, c, Grn] > 128)
-                {
-                    wi[r, c, Red] = 0xFF;
-                    wi[r, c, Grn] = 0xFF;
-                    wi[r, c, Blu] = 0xFF;
-                }
-                else
+                int sum = wi[r, c, Red] + wi[r, c, Grn] + wi[r, c, Blu];
+
+                if (sum < 192)
                 {
                     wi[r, c, Red] = 0;
                     wi[r, c, Grn] = 0;
                     wi[r, c, Blu] = 0;
                 }
+                else if (sum < 383)
+                {
+                    wi[r, c, Red] = 255;
+                    wi[r, c, Grn] = 128;
+                    wi[r, c, Blu] = 0;
+                }
+                else if (sum < 575)
+                {
+                    wi[r, c, Red] = 0;
+                    wi[r, c, Grn] = 255;
+                    wi[r, c, Blu] = 128;
+                }
+                else
+                {
+                    wi[r, c, Red] = 128;
+                    wi[r, c, Grn] = 0;
+                    wi[r, c, Blu] = 255;
+                }
+
+                // int levels = 2;
+                // float levelDiv = 255f / levels;
+                // float scale = 255f / (levels - 1);
+
+                // int rLevel = (int)(wi[r, c, Red ] / levelDiv);
+                // wi[r, c, Red] = (byte)(0.5f + scale * rLevel);
+
+                // int gLevel = (int)(wi[r, c, Grn ] / levelDiv);
+                // wi[r, c, Grn] = (byte)(0.5f + scale * gLevel);
+
+                // int bLevel = (int)(wi[r, c, Blu ] / levelDiv);
+                // wi[r, c, Blu] = (byte)(0.5f + scale * bLevel);
             }
         }
 
