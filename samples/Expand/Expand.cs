@@ -23,7 +23,7 @@ internal class Expand
 
         win = new Window
         {
-            Title = "Blend v1.0",
+            Title = "Expand v1.0",
             Height = oldFriend.height,
             Width = oldFriend.width,
             Background = Brushes.Magenta,
@@ -42,7 +42,7 @@ internal class Expand
         {
             // Step 1, use shrinkFactor = 1:
 
-            // float shrinkFactor = 1;
+            float shrinkFactor = 1;
 
 
             // Step 2, try shrinkFactor = 0.5f:
@@ -54,11 +54,11 @@ internal class Expand
             
             // float shrinkFactor = 1 - (float)r / newFriend.height;
 
-            // float shrinkFactor = 1 - (float)Math.Abs(r - newFriend.height / 2) / newFriend.height;
-
             // Your first challenge: make shrinkFactor start at 0.5
             // at the top, rise to 1 in the middle row, then back down
             // at the bottom to 0.5.
+
+            // float shrinkFactor = 
 
             // Your second challenge: look at the example images and
             // figure out what you think shrinkFactor is at the top,
@@ -66,8 +66,8 @@ internal class Expand
             // values, changing it a bit at each row, so your final
             // result matches the examples.
 
-            float shrinkFactor = 1 - 2 * (float)Math.Abs(r - newFriend.height / 2) / newFriend.height;
-
+            // float shrinkFactor = 
+            
             for (int c = 0; c < newFriend.width; ++c)
             {
                 // What is the current column's distanct, positive or negative,

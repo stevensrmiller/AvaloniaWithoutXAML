@@ -39,7 +39,7 @@ internal class Blend
     {
         win.Content = stars.img;
 
-        // Assignment 0: Average the two pictures together, pixel by pixel
+        // Part 0: Average the two pictures together, pixel by pixel
 
         // for (int r = 0; r < trees.height; ++r)
         // {
@@ -48,20 +48,6 @@ internal class Blend
         //         for (int p = 0; p < 3; ++p)
         //         {
         //             trees[r, c, p] = (byte)(0.5f + (trees[r, c, p] + stars[r, c, 0]) / 2f);
-        //         }
-        //     }
-        // }
-
-        // Assignment 0.5: Simulate averaging by copying every other pixel.
-
-        // for (int r = 0; r < trees.height; r += 2)
-        // {
-        //     for (int c = 0; c < trees.width; c += 2)
-        //     {
-        //         for (int p = 0; p < 3; ++p)
-        //         {
-        //             trees[r, c, p] = stars[r, c, 0];
-        //             trees[r + 1, c + 1, p] = stars[r + 1, c + 1, 0];
         //         }
         //     }
         // }
