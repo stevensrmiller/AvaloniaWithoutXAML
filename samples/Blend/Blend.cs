@@ -47,7 +47,7 @@ internal class Blend
         //     {
         //         for (int p = 0; p < 3; ++p)
         //         {
-        //             trees[r, c, p] = (byte)(0.5f + (trees[r, c, p] + stars[r, c, 0]) / 2f);
+        //             trees[r, c, p] = (byte)(0.5f + (trees[r, c, p] + stars[r, c, p]) / 2f);
         //         }
         //     }
         // }
