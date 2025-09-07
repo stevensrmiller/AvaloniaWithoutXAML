@@ -17,5 +17,6 @@ internal class StarterWindow
         };
 
         win.Show();
+        win.TopMost = true;
     }
 }
