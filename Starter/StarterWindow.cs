@@ -1,15 +1,15 @@
 using Avalonia.Controls;
 using Avalonia.Media;
 
-internal class StarterWindow
+internal class MyProject
 {
     public Window win;
 
-    public StarterWindow()
+    public MyProject()
     {
         win = new Window
         {
-            Title = "StarterWindow v0.1",
+            Title = "MyProject v0.1",
             Height = 720,
             Width = 1280,
             Background = Brushes.Magenta,
